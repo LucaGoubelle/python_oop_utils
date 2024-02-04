@@ -1,4 +1,5 @@
 """ fct test """
+import sys; sys.dont_write_bytecode = True
 from files_handlers.png_fle_handler import PNGFileHandler
 
 png_fh = PNGFileHandler()
