@@ -33,17 +33,21 @@ import sys; sys.dont_write_bytecode = True
 # print(res5)
 # print(res6)
 
+# from list_utils import ListUtils
 
-from list_utils import ListUtils
+# lstu = ListUtils()
 
-lstu = ListUtils()
+# lst = [1,2,3,4,5]
 
-lst = [1,2,3,4,5]
+# lst2 = lstu.rotate_elements_left(lst, 2)
+# lst3 = lstu.rotate_elements_right(lst, 2)
+# lst4 = lstu.reverse_list(lst)
 
-lst2 = lstu.rotate_elements_left(lst, 2)
-lst3 = lstu.rotate_elements_right(lst, 2)
-lst4 = lstu.reverse_list(lst)
+# print(lst2)
+# print(lst3)
+# print(lst4)
 
-print(lst2)
-print(lst3)
-print(lst4)
+from matplot_lib.plot_drawer import PlotDrawer
+
+pd = PlotDrawer([0,10],[0,20])
+pd.draw()
