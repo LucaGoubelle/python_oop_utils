@@ -49,5 +49,6 @@ import sys; sys.dont_write_bytecode = True
 
 from matplot_lib.plot_drawer import PlotDrawer
 
-pd = PlotDrawer([0,10],[0,20])
-pd.draw()
+pd = PlotDrawer([0,10],[0,20], title="pastafarism", xlabel="pirates", ylabel="temperature")
+
+pd.draw(grid=True)
