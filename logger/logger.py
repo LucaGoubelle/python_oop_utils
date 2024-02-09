@@ -1,5 +1,6 @@
 """ logger """
 from logger.bcolor import Bcolors
+from datetime import datetime
 
 class Logger:
     """ Logger class """
@@ -12,6 +13,10 @@ class Logger:
     def log_info(self, content:str):
         """ log warning """
         print(f"{Bcolors.OKCYAN}{content}{Bcolors.ENDC}")
+    
+    def time_log_info(self, content:str):
+        """ log warning """
+        print(f"[{Bcolors.OKGREEN}{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{Bcolors.ENDC}]: {Bcolors.OKCYAN}{content}{Bcolors.ENDC}")
         
     def log_success(self, content:str):
         """ log success """

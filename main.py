@@ -8,3 +8,5 @@ log.log_success("Test successful")
 log.log_warning("Test unstable")
 log.log_fail("Test failed")
 log.log_info("Test running...")
+
+log.time_log_info("first log...")
