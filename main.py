@@ -1,12 +1,7 @@
 """ fct test """
 import sys; sys.dont_write_bytecode = True
-from logger.logger import Logger
+from list_utils import ListUtils
 
-log = Logger()
-
-log.log_success("Test successful")
-log.log_warning("Test unstable")
-log.log_fail("Test failed")
-log.log_info("Test running...")
-
-log.time_log_info("first log...")
+lst_u = ListUtils()
+result = lst_u.to_string([1,2,3], "_")
+print(result)
